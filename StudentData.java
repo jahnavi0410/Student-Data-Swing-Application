@@ -69,9 +69,9 @@ public class StudentData extends JFrame {
 			{
 				try
 				{     Class.forName("com.mysql.cj.jdbc.Driver");//load the driver
-		             String url = "jdbc:mysql://localhost:3306/jdbc";
-		              String username = "root";
-		             String password = "root123";
+		             String url = "{url}";
+		              String username = "{username}";
+		             String password = "{password}";
                     Connection con = DriverManager.getConnection(url,username,password);//create a connection
                      Statement st = con.createStatement();
 					   
